@@ -1,3 +1,5 @@
 def start
-  puts "Hello World!"
+  puts "Hello World!" #TODO: add more :P
 end
+
+start
