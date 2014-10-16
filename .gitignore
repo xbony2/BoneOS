@@ -46,9 +46,12 @@ build/
 # unless supporting rvm < 1.11.0 or doing something fancy, ignore this:
 .rvmrc
 
-#mac
+# OS X files
 .DS_Store
+
+# Compiled code
 /bin/
 
-#gradle
+# Gradle stuff
 !gradle/wrapper/gradle-wrapper.jar
+/build/
