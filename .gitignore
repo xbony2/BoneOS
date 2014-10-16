@@ -49,3 +49,6 @@ build/
 #mac
 .DS_Store
 /bin/
+
+#gradle
+!gradle/wrapper/gradle-wrapper.jar
