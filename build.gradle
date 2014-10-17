@@ -3,12 +3,12 @@ buildscript {
 	  jcenter()
 	}
 	dependencies {
-	  classpath "com.lookout:jruby-gradle-plugin:2.1.0"
+	  classpath "com.github.jruby-gradle:jruby-gradle-plugin:0.1.2"
 	}
 }
 
 apply plugin: 'java'
-apply plugin: "com.lookout.jruby"
+//apply plugin: "com.github.jruby-gradle.base"
 apply plugin: 'groovy'
 apply plugin: 'scala'
 apply plugin: 'eclipse'
