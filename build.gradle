@@ -1,5 +1,20 @@
+buildscript {
+	repositories {
+	  jcenter()
+	}
+	dependencies {
+	  classpath "com.lookout:jruby-gradle-plugin:2.1.0"
+	}
+}
+
 apply plugin: 'java'
+apply plugin: "com.lookout.jruby"
+apply plugin: 'groovy'
+apply plugin: 'scala'
 apply plugin: 'eclipse'
+
+sourceCompatibility = 1.6
+version = newBoneOSVersion
 
 repositories {
 	mavenCentral()
@@ -7,10 +22,10 @@ repositories {
 
 dependencies {
 	compile jrubyVersion
+	compile groovyVersion
+	compile scalaVersion
 }
 
-sourceCompatibility = 1.6
-version = newBoneOSVersion
 jar {
 	manifest {
 		attributes 'Implementation-Title': 'BoneOS',
