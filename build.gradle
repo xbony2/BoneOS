@@ -5,8 +5,12 @@ repositories {
 	mavenCentral()
 }
 
+dependencies {
+	compile jrubyVersion
+}
+
 sourceCompatibility = 1.6
-version = '1.0.0a'
+version = newBoneOSVersion
 jar {
 	manifest {
 		attributes 'Implementation-Title': 'BoneOS',
