@@ -14,5 +14,9 @@ public class Main {
 	public static void main(String[] args) throws FileNotFoundException, ScriptException{
 		jruby = new ScriptEngineManager().getEngineByName("jruby");
 		Ruby.runScript(RubyIndex.STARTUPSCREEN);
+		
+		while(true){
+			//TODO
+		}
 	}
 }
