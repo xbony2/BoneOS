@@ -1,11 +1,17 @@
 package ibittech.boneos.util;
 
+import ibittech.boneos.system.java.ShutdownStatus;
+
 public class Command {
-	public static boolean doCommand(String command){
-		switch(command){
+	public static void doCommand(String command){
+		switch(command.toLowerCase()){
 		case "help": //TODO
+			break;
+		case "shutdown":
+			ShutdownStatus.shutDown(ShutdownStatus.NORMAL);
+		default:
+			System.out.println("Error: command not found: " + command.toLowerCase());
+			break;
 		}
-		System.out.println("Error: command not found: " + command);
-		return false;
 	}
 }
