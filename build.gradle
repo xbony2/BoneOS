@@ -9,7 +9,6 @@ buildscript {
 
 //apply plugin: "com.github.jruby-gradle.base"
 apply plugin: 'groovy'
-apply plugin: 'scala'
 apply plugin: 'eclipse'
 
 sourceCompatibility = 1.6
